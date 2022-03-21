@@ -1,0 +1,906 @@
+{
+    "name": "3-Day Conference (Broken-down by Days) with Networking Lounge",
+    "description": "A very simple, efficient and minimalist style of venue, Genesis is ideal for 1-day multi-track conferences, seminars or meetings, with breakouts as options.",
+    "version": "1.0.0",
+    "author": "GSI",
+    "keyword": "1-Day, Multi-Track, Conference, Seminar, Meeting, Breakout",
+    "features": "7 templates, Sticky menu, Live stream, Chat, Direct message, Participants list, Speakers and agenda, Content blocks, Notifications, Responsive template, Light and dark mode",
+    "defaultMenus": [
+        {
+            "name": "Header Menu",
+            "items": [
+                {
+                    "name": "Home",
+                    "link": "home",
+                    "openInNewWindow": false
+                },
+                {
+                    "name": "Day 1",
+                    "link": "day-1",
+                    "openInNewWindow": false
+                },
+                {
+                    "name": "Day 2",
+                    "link": "day-2",
+                    "openInNewWindow": false
+                },
+                {
+                    "name": "Day 3",
+                    "link": "day-3",
+                    "openInNewWindow": false
+                },
+                {
+                    "name": "Lounges",
+                    "link": "lounges",
+                    "openInNewWindow": false
+                },
+                {
+                    "name": "Networking",
+                    "link": "networking-lounge",
+                    "openInNewWindow": false
+                },
+                {
+                    "name": "About",
+                    "link": "serendipity-lounge",
+                    "openInNewWindow": false
+                }
+            ]
+        }
+    ],
+    "defaultLivepages": [
+        {
+            "slug": "home",
+            "title": "Home",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "image-block": {
+                    "type": "Image",
+                    "title": "Welcome to the Conference",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Welcome to the Conference</span></strong></span></p>",
+                        "title": "Welcome to the Conference",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "autoScrollEnabled": false,
+                        "autoScrollTimeInterval": null,
+                        "isSlideshow": false,
+                        "spaceBetweenImages": "0px",
+                        "images": [
+                            {
+                                "url": "{{experience.baseUrl}}/assets/welcome-to-the-conference.png"
+                            }
+                        ],
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "80%",
+                        "blockHeight": "288px",
+                        "widthType": "custom",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["16", "16", "16", "16", "px"],
+                        "contentMargin": ["2", "0", "0", "10", "%"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockWidth": "100%",
+                                "blockHeight": "fit-content",
+                                "widthType": "full",
+                                "fitHeightToContent": true,
+                                "contentMargin": ["29", "0", "0", "0", "px"]
+                            },
+                            "mobile": {
+                                "blockWidth": "100%",
+                                "blockHeight": "fit-content",
+                                "widthType": "full",
+                                "fitHeightToContent": true,
+                                "contentMargin": ["29", "0", "0", "0", "px"]
+                            }
+                        }
+                    }
+                },
+                "featured-block": {
+                    "type": "FeaturedContent",
+                    "title": "Featured Content",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Featured Content</span></strong></span></p>",
+                        "title": "Featured Content",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "cardBoundingBox": true,
+                        "cardHeight": "340px",
+                        "cardPadding": "16px",
+                        "cardWidth": "260px",
+                        "fitCardHeightToContent": true,
+                        "cardDescriptionVisibility": true,
+                        "cardTitleVisibility": true,
+                        "featuredcontent": [
+                            {
+                                "coverDisplayImage": "{{experience.baseUrl}}/assets/day-1-theme-the-past.png",
+                                "coverDisplayType": "image",
+                                "coverDisplayVideo": null,
+                                "description": "<p>Add some description about your featured content here.</p>",
+                                "link": null,
+                                "openInNewWindow": true,
+                                "order": 1,
+                                "title": "Day 1",
+                                "visibility": true
+                            },
+                            {
+                                "coverDisplayImage": "{{experience.baseUrl}}/assets/day-2-theme-the-present.png",
+                                "coverDisplayType": "image",
+                                "coverDisplayVideo": null,
+                                "description": "<p>Add some description about your featured content here.</p>",
+                                "link": null,
+                                "openInNewWindow": true,
+                                "order": 2,
+                                "title": "Day 2",
+                                "visibility": true
+                            },
+                            {
+                                "coverDisplayImage": "{{experience.baseUrl}}/assets/day-3-theme-the-future.png",
+                                "coverDisplayType": "image",
+                                "coverDisplayVideo": null,
+                                "description": "<p>Add some description about your featured content here.</p>",
+                                "link": null,
+                                "openInNewWindow": true,
+                                "order": 3,
+                                "title": "Day 3",
+                                "visibility": true
+                            }
+                        ],
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["0", "0", "0", "0", "px"]
+                    }
+                },
+                "sponsors-block": {
+                    "type": "ImageList",
+                    "title": "Our Sponsors",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Our Sponsors</span></strong></span></p>",
+                        "title": "Our Sponsors",
+                        "headingVisibility": true,
+                        "headingAlignment": "center",
+                        "autoScrollEnabled": false,
+                        "autoScrollTimeInterval": null,
+                        "isSlideshow": false,
+                        "spaceBetweenImages": "24px",
+                        "images": [
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample1.png"
+                            },
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample2.png"
+                            },
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample3.png"
+                            },
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample4.png"
+                            },
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample5.png"
+                            },
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample6.png"
+                            },
+                            {
+                                "url": "{{venue.sdkBaseUrl}}/assets/sponsors/sample7.png"
+                            }
+                        ],
+                        "order": 3,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "178px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["24", "24", "24", "24", "px"],
+                        "contentMargin": ["56", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "day-1",
+            "title": "Day 1",
+            "isPublic": false,
+            "template": "vertical-banner",
+            "predefinedBlocks": {
+                "vertical-cover-image": {
+                    "preventBlockSettings": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventChangeType": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventEdit": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventDelete": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "type": "Image",
+                    "title": "Cover Image",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Cover Image</span></strong></span></p>",
+                        "title": "Cover Image",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "autoScrollEnabled": false,
+                        "autoScrollTimeInterval": null,
+                        "images": [
+                            {
+                                "url": "{{experience.baseUrl}}/assets/vertical-banner-1.png"
+                            }
+                        ],
+                        "isSlideshow": false,
+                        "spaceBetweenImages": "0px",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "100%",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["0", "0", "0", "0", "px"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockWidth": "0%",
+                                "blockHeight": "0px",
+                                "widthType": "custom",
+                                "fitHeightToContent": false
+                            },
+                            "mobile": {
+                                "blockWidth": "0%",
+                                "blockHeight": "0px",
+                                "widthType": "custom",
+                                "fitHeightToContent": false
+                            }
+                        }
+                    }
+                },
+                "livestream-block": {
+                    "type": "LiveStream",
+                    "title": "Livestream",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Livestream</span></strong></span></p>",
+                        "title": "Livestream",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "livestreamTitle": "Livestream",
+                        "livestreamTitleVisibility": true,
+                        "streamingService": "youtube",
+                        "livestreamUrl": "https://www.youtube.com/watch?v=kCJsx4h9Hr8&t=7s",
+                        "displaySomethingWhenNotLive": "video",
+                        "displayImageWhenNotLive": null,
+                        "displayVideoWhenNotLive": null,
+                        "disableVideoQualityOptions": false,
+                        "disableAutoplay": true,
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "524px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["16", "0", "0", "0", "px"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockHeight": "300px",
+                                "fitHeightToContent": false
+                            },
+                            "mobile": {
+                                "blockHeight": "250px",
+                                "fitHeightToContent": false
+                            }
+                        }
+                    }
+                },
+                "agenda-block": {
+                    "type": "Agenda",
+                    "title": "Agenda",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Agenda</span></strong></span></p>",
+                        "title": "Agenda",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "blockLayout": "single",
+                        "agendaFromLivePage": "all",
+                        "enableBookmark": true,
+                        "layout": null,
+                        "mode": "light",
+                        "moderatorsVisibility": true,
+                        "panelistsVisibility": true,
+                        "sessionDescription": null,
+                        "sessionDescriptionVisibility": true,
+                        "sessionTitle": "Agenda",
+                        "sessionTitleVisibility": true,
+                        "speakersVisibility": true,
+                        "order": 3,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "340px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["24", "24", "24", "24", "px"],
+                        "contentMargin": ["16", "0", "0", "0", "px"]
+                    }
+                },
+                "speakers-block": {
+                    "type": "Speakers",
+                    "title": "Speakers",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Speakers</span></strong></span></p>",
+                        "title": "Speakers",
+                        "headingVisibility": true,
+                        "headingAlignment": "center",
+                        "cardBoundingBox": true,
+                        "cardHeight": "401px",
+                        "cardPadding": "16px",
+                        "cardWidth": "220px",
+                        "fitCardHeightToContent": true,
+                        "speakers": [],
+                        "layout": "inline",
+                        "showSpeakersType": "all",
+                        "sortBy": "firstname",
+                        "sortOrder": "ASC",
+                        "speakerBioVisibility": true,
+                        "speakerCompanyVisibility": true,
+                        "speakerJobTitleVisibility": true,
+                        "order": 5,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["32", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "day-2",
+            "title": "Day 2",
+            "isPublic": false,
+            "template": "vertical-banner",
+            "predefinedBlocks": {
+                "vertical-cover-image": {
+                    "preventBlockSettings": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventChangeType": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventEdit": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventDelete": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "type": "Image",
+                    "title": "Cover Image",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Cover Image</span></strong></span></p>",
+                        "title": "Cover Image",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "autoScrollEnabled": false,
+                        "autoScrollTimeInterval": null,
+                        "images": [
+                            {
+                                "url": "{{experience.baseUrl}}/assets/vertical-banner-2.png"
+                            }
+                        ],
+                        "isSlideshow": false,
+                        "spaceBetweenImages": "0px",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "100%",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["0", "0", "0", "0", "px"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockWidth": "0%",
+                                "blockHeight": "0px",
+                                "widthType": "custom",
+                                "fitHeightToContent": false
+                            },
+                            "mobile": {
+                                "blockWidth": "0%",
+                                "blockHeight": "0px",
+                                "widthType": "custom",
+                                "fitHeightToContent": false
+                            }
+                        }
+                    }
+                },
+                "livestream-block": {
+                    "type": "LiveStream",
+                    "title": "Livestream",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Livestream</span></strong></span></p>",
+                        "title": "Livestream",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "livestreamTitle": "Livestream",
+                        "livestreamTitleVisibility": true,
+                        "streamingService": "youtube",
+                        "livestreamUrl": "https://www.youtube.com/watch?v=kCJsx4h9Hr8&t=7s",
+                        "displaySomethingWhenNotLive": "video",
+                        "displayImageWhenNotLive": null,
+                        "displayVideoWhenNotLive": null,
+                        "disableVideoQualityOptions": false,
+                        "disableAutoplay": true,
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "524px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["16", "0", "0", "0", "px"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockHeight": "300px",
+                                "fitHeightToContent": false
+                            },
+                            "mobile": {
+                                "blockHeight": "250px",
+                                "fitHeightToContent": false
+                            }
+                        }
+                    }
+                },
+                "agenda-block": {
+                    "type": "Agenda",
+                    "title": "Agenda",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Agenda</span></strong></span></p>",
+                        "title": "Agenda",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "blockLayout": "single",
+                        "agendaFromLivePage": "all",
+                        "enableBookmark": true,
+                        "layout": null,
+                        "mode": "light",
+                        "moderatorsVisibility": true,
+                        "panelistsVisibility": true,
+                        "sessionDescription": null,
+                        "sessionDescriptionVisibility": true,
+                        "sessionTitle": "Agenda",
+                        "sessionTitleVisibility": true,
+                        "speakersVisibility": true,
+                        "order": 3,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "340px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["24", "24", "24", "24", "px"],
+                        "contentMargin": ["16", "0", "0", "0", "px"]
+                    }
+                },
+                "speakers-block": {
+                    "type": "Speakers",
+                    "title": "Speakers",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Speakers</span></strong></span></p>",
+                        "title": "Speakers",
+                        "headingVisibility": true,
+                        "headingAlignment": "center",
+                        "cardBoundingBox": true,
+                        "cardHeight": "401px",
+                        "cardPadding": "16px",
+                        "cardWidth": "220px",
+                        "fitCardHeightToContent": true,
+                        "speakers": [],
+                        "layout": "inline",
+                        "showSpeakersType": "all",
+                        "sortBy": "firstname",
+                        "sortOrder": "ASC",
+                        "speakerBioVisibility": true,
+                        "speakerCompanyVisibility": true,
+                        "speakerJobTitleVisibility": true,
+                        "order": 5,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["32", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "day-3",
+            "title": "Day 3",
+            "isPublic": false,
+            "template": "vertical-banner",
+            "predefinedBlocks": {
+                "vertical-cover-image": {
+                    "preventBlockSettings": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventChangeType": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventEdit": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "preventDelete": {
+                        "SPONSOR": true,
+                        "MANAGER": true
+                    },
+                    "type": "Image",
+                    "title": "Cover Image",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Cover Image</span></strong></span></p>",
+                        "title": "Cover Image",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "autoScrollEnabled": false,
+                        "autoScrollTimeInterval": null,
+                        "images": [
+                            {
+                                "url": "{{experience.baseUrl}}/assets/vertical-banner-3.png"
+                            }
+                        ],
+                        "isSlideshow": false,
+                        "spaceBetweenImages": "0px",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "100%",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["0", "0", "0", "0", "px"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockWidth": "0%",
+                                "blockHeight": "0px",
+                                "widthType": "custom",
+                                "fitHeightToContent": false
+                            },
+                            "mobile": {
+                                "blockWidth": "0%",
+                                "blockHeight": "0px",
+                                "widthType": "custom",
+                                "fitHeightToContent": false
+                            }
+                        }
+                    }
+                },
+                "livestream-block": {
+                    "type": "LiveStream",
+                    "title": "Livestream",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Livestream</span></strong></span></p>",
+                        "title": "Livestream",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "livestreamTitle": "Livestream",
+                        "livestreamTitleVisibility": true,
+                        "streamingService": "youtube",
+                        "livestreamUrl": "https://www.youtube.com/watch?v=kCJsx4h9Hr8&t=7s",
+                        "displaySomethingWhenNotLive": "video",
+                        "displayImageWhenNotLive": null,
+                        "displayVideoWhenNotLive": null,
+                        "disableVideoQualityOptions": false,
+                        "disableAutoplay": true,
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "524px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["16", "0", "0", "0", "px"],
+                        "breakpoints": {
+                            "tablet": {
+                                "blockHeight": "300px",
+                                "fitHeightToContent": false
+                            },
+                            "mobile": {
+                                "blockHeight": "250px",
+                                "fitHeightToContent": false
+                            }
+                        }
+                    }
+                },
+                "agenda-block": {
+                    "type": "Agenda",
+                    "title": "Agenda",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Agenda</span></strong></span></p>",
+                        "title": "Agenda",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "blockLayout": "single",
+                        "agendaFromLivePage": "all",
+                        "enableBookmark": true,
+                        "layout": null,
+                        "mode": "light",
+                        "moderatorsVisibility": true,
+                        "panelistsVisibility": true,
+                        "sessionDescription": null,
+                        "sessionDescriptionVisibility": true,
+                        "sessionTitle": "Agenda",
+                        "sessionTitleVisibility": true,
+                        "speakersVisibility": true,
+                        "order": 3,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "340px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["24", "24", "24", "24", "px"],
+                        "contentMargin": ["16", "0", "0", "0", "px"]
+                    }
+                },
+                "speakers-block": {
+                    "type": "Speakers",
+                    "title": "Speakers",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Speakers</span></strong></span></p>",
+                        "title": "Speakers",
+                        "headingVisibility": true,
+                        "headingAlignment": "center",
+                        "cardBoundingBox": true,
+                        "cardHeight": "401px",
+                        "cardPadding": "16px",
+                        "cardWidth": "220px",
+                        "fitCardHeightToContent": true,
+                        "speakers": [],
+                        "layout": "inline",
+                        "showSpeakersType": "all",
+                        "sortBy": "firstname",
+                        "sortOrder": "ASC",
+                        "speakerBioVisibility": true,
+                        "speakerCompanyVisibility": true,
+                        "speakerJobTitleVisibility": true,
+                        "order": 5,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["32", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "lounges",
+            "title": "Lounges",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Page Title</span></strong></span></p>",
+                        "title": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center; line-height: 36.8px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Lounges</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["56", "0", "0", "0", "px"]
+                    }
+                },
+                "networking-lounge-link-block": {
+                    "type": "Link",
+                    "title": "Networking Lounge",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Networking Lounge</span></strong></span></p>",
+                        "title": "Networking Lounge",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "backgroundCoverImage": "{{experience.baseUrl}}/assets/networking-lounge.png",
+                        "backgroundCoverImageVisibility": true,
+                        "enableLink": true,
+                        "link": "networking-lounge",
+                        "openInNewWindow": false,
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "50%",
+                        "blockHeight": "297px",
+                        "widthType": "half",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["48", "0", "0", "0", "px"]
+                    }
+                },
+                "serendipity-lounge-link-block": {
+                    "type": "Link",
+                    "title": "Serendipity Lounge",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Serendipity Lounge</span></strong></span></p>",
+                        "title": "Serendipity Lounge",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "backgroundCoverImage": "{{experience.baseUrl}}/assets/serendipity-lounge.png",
+                        "backgroundCoverImageVisibility": true,
+                        "enableLink": true,
+                        "link": "serendipity-lounge",
+                        "openInNewWindow": false,
+                        "order": 3,
+                        "alignment": "left",
+                        "blockWidth": "50%",
+                        "blockHeight": "297px",
+                        "widthType": "half",
+                        "fitHeightToContent": false,
+                        "boundingBox": true,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["48", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "networking-lounge",
+            "title": "Networking Lounge",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Page Title</span></strong></span></p>",
+                        "title": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center; line-height: 36.8px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Networking Lounge</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["56", "0", "0", "0", "px"]
+                    }
+                },
+                "meeting-block": {
+                    "type": "Meeting",
+                    "title": "Networking Lounge",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Networking Lounge</span></strong></span></p>",
+                        "title": "Networking Lounge",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "settings": {
+                            "background": "{{venue.sdkBaseUrl}}/assets/meeting-white-background.jpg",
+                            "disableBackground": true,
+                            "disableCamera": false,
+                            "disableChat": false,
+                            "disableFrontDoor": false,
+                            "disableParticipantList": false,
+                            "disableShareScreen": false,
+                            "disableVideo": false
+                        },
+                        "meetingId": null,
+                        "meetingType": "meet",
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "600px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["20", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "serendipity-lounge",
+            "title": "Serendipity Lounge",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Page Title</span></strong></span></p>",
+                        "title": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center; line-height: 36.8px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">Serendipity Lounge</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["56", "0", "0", "0", "px"]
+                    }
+                },
+                "meeting-block": {
+                    "type": "Meeting",
+                    "title": "Serendipity Lounge",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Serendipity Lounge</span></strong></span></p>",
+                        "title": "Serendipity Lounge",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "settings": {
+                            "background": "{{venue.sdkBaseUrl}}/assets/meeting-white-background.jpg",
+                            "disableBackground": true,
+                            "disableCamera": false,
+                            "disableChat": false,
+                            "disableFrontDoor": false,
+                            "disableParticipantList": false,
+                            "disableShareScreen": false,
+                            "disableVideo": false
+                        },
+                        "meetingId": null,
+                        "meetingType": "meet",
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "600px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["20", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        }
+    ]
+}

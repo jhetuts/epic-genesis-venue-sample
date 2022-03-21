@@ -1,0 +1,70 @@
+{
+    "name": "All-Hands Meeting",
+    "description": "A very simple, efficient and minimalist style of venue, Genesis is ideal for 1-day multi-track conferences, seminars or meetings, with breakouts as options.",
+    "version": "1.0.0",
+    "author": "GSI",
+    "keyword": "1-Day, Multi-Track, Conference, Seminar, Meeting, Breakout",
+    "features": "7 templates, Sticky menu, Live stream, Chat, Direct message, Participants list, Speakers and agenda, Content blocks, Notifications, Responsive template, Light and dark mode",
+    "defaultMenus": [],
+    "defaultLivepages": [
+        {
+            "slug": "all-hands",
+            "title": "All-Hands",
+            "isPublic": false,
+            "template": "blank",
+            "predefinedBlocks": {
+                "page-title-block": {
+                    "type": "RichText",
+                    "title": "Page Title",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Page Title</span></strong></span></p>",
+                        "title": "Page Title",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "textContent": "<p style=\"text-align: center; line-height: 36.8px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 32px; font-family: var(--themeSecondaryFontFamily);\">All-Hands</span></strong></span></p>",
+                        "order": 1,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "fit-content",
+                        "widthType": "full",
+                        "fitHeightToContent": true,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["56", "0", "0", "0", "px"]
+                    }
+                },
+                "meeting-block": {
+                    "type": "Meeting",
+                    "title": "All-Hands",
+                    "data": {
+                        "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">All Hands</span></strong></span></p>",
+                        "title": "All-Hands",
+                        "headingVisibility": false,
+                        "headingAlignment": "center",
+                        "settings": {
+                            "background": "{{venue.sdkBaseUrl}}/assets/meeting-white-background.jpg",
+                            "disableBackground": true,
+                            "disableCamera": false,
+                            "disableChat": false,
+                            "disableFrontDoor": false,
+                            "disableParticipantList": false,
+                            "disableShareScreen": false,
+                            "disableVideo": false
+                        },
+                        "meetingId": null,
+                        "meetingType": "meet",
+                        "order": 2,
+                        "alignment": "left",
+                        "blockWidth": "100%",
+                        "blockHeight": "600px",
+                        "widthType": "full",
+                        "fitHeightToContent": false,
+                        "boundingBox": false,
+                        "contentPadding": ["0", "0", "0", "0", "px"],
+                        "contentMargin": ["20", "0", "0", "0", "px"]
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,430 @@
+
+/* BEGIN THEME CSS */
+
+:root {
+	--themePrimaryFontFamily: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+	--themeSecondaryFontFamily: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+	--themePrimaryColor: #1890FF;
+	--themeRedColor: #FF4D4F;
+	--themeSecondaryColor: #E6F7FF;
+	--themeContainerBackgroundColor: #F7F7F8;
+	--themeTextColor: #000000;
+	--themeWhiteColor: #FFFFFF;
+	--themeBlackColor: #000000;
+	--themeBorderColor: #EDEDED;
+}
+
+html,
+body,
+.gevme-template-container {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: var(--themeTextColor);
+	background-color: var(--themeWhiteColor);
+	font-family: var(--themePrimaryFontFamily);
+	font-size: 14px;
+}
+
+.gevme-button {
+	font-family: var(--themeSecondaryFontFamily);
+}
+
+.gevme-button-primary,
+.gevme-button-primary:hover,
+.gevme-button-primary:focus,
+.gevme-button-primary:active {
+	color: var(--themeWhiteColor);
+	background-color: var(--themePrimaryColor);
+	border-color: var(--themePrimaryColor);
+	outline: none;
+}
+
+gevme-nav-menu,
+gevme-header {
+	height: 56px;
+	width: 100%;
+	display: block;
+}
+
+.gevme-template-main {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	display: flex;
+	background-color: var(--themeContainerBackgroundColor);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+gevme-header.active + .gevme-template-main {
+	height: calc(100% - 56px);
+}
+
+.gevme-template-main .gevme-template-content,
+.gevme-template-main .gevme-template-chat {
+	height: 100%;
+}
+
+.gevme-template-main .gevme-template-content {
+	flex: 1 1 auto;
+	overflow: auto;
+	position: relative;
+}
+
+@media screen and (min-width: 768px) {
+	.gevme-template-main .gevme-template-chat {
+		flex: 0 0 60px;
+		border-left: 1px solid var(--themeBorderColor);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.gevme-template-main {
+		flex-direction: column;
+	}
+
+	.gevme-template-main.livebar-left {
+		flex-direction: column-reverse;
+	}
+
+	.gevme-template-main .gevme-template-chat {
+		height: 80px;
+		width: 100%;
+		display: block;
+		flex: 0 0 80px !important;
+	}
+
+	.gevme-template-chat ~ .gevme-template-content {
+		height: calc(100% - 80px);
+		width: 100%;
+		display: block;
+	}
+}
+
+.gevme-content-blocks-banner .gevme-content-blocks-banner-image {
+	height: 100%;
+	width: 100%;
+}
+
+.gevme-404-container {
+	height: 100%;
+	width: 100%;
+	max-width: 992px;
+	margin: 0px auto;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gevme-404-container .gevme-404-logo {
+	height: 72px;
+	width: 60px;
+	object-fit: contain;
+}
+
+.gevme-404-container .gevme-404-title {
+	margin-top: 12px;
+	margin-bottom: -12px;
+	font-size: 96px;
+	font-weight: 700;
+	font-family: var(--themeSecondaryFontFamily);
+}
+
+.gevme-404-container .gevme-404-description {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: var(--themeSecondaryFontFamily);
+}
+
+.gevme-content-blocks-container {
+	position: relative;
+	padding: 0px;
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image {
+	display: flex;
+	height: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container {
+	flex: 0 0 auto;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container gevme-content-block[name="vertical-cover-image"] .gevme-content-blocks-row,
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container gevme-content-block[name="vertical-cover-image"] .gevme-content-blocks-row .gevme-content-blocks-column {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container gevme-content-block[name="vertical-cover-image"] .gevme-content-blocks-row .gevme-content-blocks-column .gevme-image-block {
+	border-radius: 0px;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container gevme-content-block[name="vertical-cover-image"] .gevme-image-block .gevme-image-block-flex-container .gevme-image-block-flex-image,
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container gevme-content-block[name="vertical-cover-image"] .gevme-imagelist-block .gevme-imagelist-block-flex-container .gevme-imagelist-block-flex-image,
+.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container gevme-content-block[name="vertical-cover-image"] .gevme-imageslideshow-block .gevme-imageslideshow-block-flex-container .gevme-imageslideshow-block-flex-image {
+	border-radius: 0px;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image gevme-content-block[exclude="vertical-cover-image"] {
+	flex: 1 1 auto;
+	margin: 0 auto;
+}
+
+.gevme-content-blocks-container.with-vertical-cover-image gevme-content-block[exclude="vertical-cover-image"],
+.gevme-content-blocks-container.with-vertical-cover-image gevme-content-block[exclude="vertical-cover-image"] .gevme-content-blocks-row {
+	overflow: auto;
+}
+
+@media screen and (max-width: 991px) {
+	.gevme-content-blocks-container.with-vertical-cover-image .vertical-cover-image-container {
+		display: none;
+	}
+
+	.gevme-content-blocks-container.with-vertical-cover-image gevme-content-block {
+		max-width: 1200px;
+	}
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image {
+	max-width: 100%;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container {
+	height: 216px;
+	width: 100%;
+	margin-bottom: 64px;
+	padding: 0px;
+	position: relative;
+	display: inline-block;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] .gevme-content-blocks-row,
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] .gevme-content-blocks-row .gevme-content-blocks-column {
+	height: 100%;
+	max-height: 100%;
+	width: 100%;
+	max-width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] .gevme-content-blocks-row .gevme-content-blocks-column:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 35.87%, rgba(24, 24, 24, 0.22) 100%), linear-gradient(360deg, rgba(0, 0, 0, 0.43) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] .gevme-image-block .gevme-image-block-flex-container .gevme-image-block-flex-image,
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] .gevme-imagelist-block .gevme-imagelist-block-flex-container .gevme-imagelist-block-flex-image,
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container gevme-content-block[name="horizontal-cover-image"] .gevme-imageslideshow-block .gevme-imageslideshow-block-flex-container .gevme-imageslideshow-block-flex-image {
+	object-fit: cover;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group {
+	width: 100%;
+	max-width: calc(100% - 72px);
+	position: absolute;
+	bottom: -32px;
+	left: 36px;
+	z-index: 1;
+	display: grid;
+	gap: 16px;
+	grid-template-columns: 178px 1fr;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-image"] {
+	height: 128px;
+	width: 178px;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-image"] .gevme-content-blocks-row {
+	height: 100%;
+	max-height: 100%;
+	width: 100%;
+	max-width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-image"] .gevme-content-blocks-row .gevme-content-blocks-column {
+	height: 100%;
+	max-height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-image"] .gevme-image-block .gevme-image-block-flex-container .gevme-image-block-flex-image,
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-image"] .gevme-imagelist-block .gevme-imagelist-block-flex-container .gevme-imagelist-block-flex-image,
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-image"] .gevme-imageslideshow-block .gevme-imageslideshow-block-flex-container .gevme-imageslideshow-block-flex-image {
+	object-fit: cover;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-text"] {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-text"] .gevme-content-blocks-row,
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-text"] .gevme-content-blocks-row .gevme-content-blocks-column {
+	width: 100%;
+	max-width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.gevme-content-blocks-container.with-horizontal-cover-image .horizontal-cover-image-container .horizontal-logo-image-group gevme-content-block[name="horizontal-logo-text"] .gevme-richtext-block .gevme-richtext-block-content p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+gevme-content-block .gevme-content-blocks-row {
+	height: fit-content;
+	max-height: 100%;
+	max-width: 1200px;
+	padding: 0px 8px 16px 8px;
+	margin: 0px auto;
+}
+@media screen and (min-width: 992px) {
+	gevme-content-block[exclude="vertical-cover-image"] .gevme-content-blocks-row {
+        padding: 0 75px!important;
+        max-width: initial!important;
+	}
+}
+
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column {
+	height: fit-content;
+	max-height: 100%;
+	position: relative;
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-top: 16px;
+}
+
+/* END THEME CSS */
+
+/* BEGIN BLOCK SPECIFIC CSS */
+
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="livestream-banner-block"] .gevme-image-block .gevme-image-block-flex-container .gevme-image-block-flex-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="q-and-a-block"] .gevme-image-block .gevme-image-block-flex-container .gevme-image-block-flex-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="networking-lounge-link-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="serendipity-lounge-link-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="sponsor-1-image-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="sponsor-2-image-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="sponsor-3-image-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="sponsor-4-image-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="sponsor-5-image-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image,
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="sponsor-6-image-block"] .gevme-link-block .gevme-link-block-container .gevme-link-block-fallback-link .gevme-link-block-fallback-link-image {
+	object-fit: fill;
+}
+
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="featured-block"] .gevme-featuredcontent-block .gevme-featuredcontent-block-card .gevme-card-body .gevme-card-text {
+	line-height: 18.46px;
+}
+
+gevme-content-block .gevme-content-blocks-row .gevme-content-blocks-column[data-content-block-container-name="speakers-block"] .gevme-speakers-block .gevme-speakers-block-card .gevme-card-body .gevme-card-text {
+	line-height: 18.46px;
+}
+
+/* END TEMPLATE SPECIFIC CSS */
+
+/* BEGIN SYNCFUSION CSS */
+
+.e-menu-wrapper,
+.e-menu-container {
+	height: calc(100% - 1px);
+}
+
+.e-menu-wrapper,
+.e-menu-container,
+.e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav,
+.e-menu-wrapper .e-menu-hscroll.e-hscroll .e-scroll-nav:hover,
+.e-menu-container .e-menu-hscroll.e-hscroll .e-scroll-nav,
+.e-menu-container .e-menu-hscroll.e-hscroll .e-scroll-nav:hover {
+	background-color: var(--themeWhiteColor);
+}
+
+.e-menu-wrapper .e-menu .e-menu-item .e-caret,
+.e-menu-container .e-menu .e-menu-item .e-caret,
+.e-menu-wrapper.e-menu-popup .e-menu-parent .e-menu-item .e-caret
+.e-menu-container.e-menu-popup .e-menu-parent .e-menu-item .e-caret {
+	color: var(--themeTextColor);
+}
+
+.e-menu-wrapper .e-menu .e-menu-item a,
+.e-menu-container .e-menu .e-menu-item a,
+.e-menu-wrapper .e-menu-hscroll.e-hscroll .e-hscroll-bar .e-hscroll-content .e-menu .e-menu-item a,
+.e-menu-container .e-menu-hscroll.e-hscroll .e-hscroll-bar .e-hscroll-content .e-menu .e-menu-item a,
+.e-menu-wrapper.e-menu-popup .e-menu-parent .e-menu-item a,
+.e-menu-container.e-menu-popup .e-menu-parent .e-menu-item a,
+.e-menu-wrapper.e-hamburger .e-menu .e-menu-item a,
+.e-menu-container.e-hamburger .e-menu .e-menu-item a {
+	color: var(--themeTextColor);
+	font-family: var(--themePrimaryFontFamily);
+}
+
+.e-menu-wrapper .e-menu-hscroll.e-hscroll .e-hscroll-bar .e-hscroll-content .e-menu .e-menu-item.e-selected,
+.e-menu-wrapper .e-menu-hscroll.e-hscroll .e-hscroll-bar .e-hscroll-content .e-menu .e-menu-item.e-focused,
+.e-menu-container .e-menu-hscroll.e-hscroll .e-hscroll-bar .e-hscroll-content .e-menu .e-menu-item.e-selected,
+.e-menu-container .e-menu-hscroll.e-hscroll .e-hscroll-bar .e-hscroll-content .e-menu .e-menu-item.e-focused,
+.e-menu-wrapper.e-menu-popup .e-menu-parent .e-menu-item.e-selected,
+.e-menu-wrapper.e-menu-popup .e-menu-parent .e-menu-item.e-focused,
+.e-menu-container.e-menu-popup .e-menu-parent .e-menu-item.e-selected,
+.e-menu-container.e-menu-popup .e-menu-parent .e-menu-item.e-focused {
+	background-color: var(--themeWhiteColor);
+	color: var(--themeTextColor);
+}
+
+.e-menu-wrapper.e-popup.e-menu-popup .e-menu-parent .e-menu-item,
+.e-menu-container.e-popup.e-menu-popup .e-menu-parent .e-menu-item {
+	border-bottom: 1px solid var(--themeBorderColor);
+}
+
+.e-menu-wrapper.e-hamburger ul.e-menu:not(.e-vertical),
+.e-menu-container.e-hamburger ul.e-menu:not(.e-vertical) {
+	position: fixed;
+	left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* END SYNCFUSION CSS */

@@ -1,0 +1,30 @@
+{{{global.partials.head-section}}}
+<main class="gevme-template-main {{#if setting.livebar.positionLeft}}livebar-left{{else}}livebar-right{{/if}}" style="background-image: url('{{setting.backgroundImage}}')">
+    {{#if setting.livebar.enabled}}
+        {{#if setting.livebar.positionLeft}}
+            <div class="gevme-template-chat" {{#if setting.livebar.closable}}style="flex: 0 0 60px;"{{else}}style="flex: 0 0 360px;"{{/if}}>
+                <gevme-live-bar />
+            </div>
+        {{/if}}
+    {{/if}}
+    <div class="gevme-template-content">
+        <div class="gevme-content-blocks-container with-horizontal-cover-image">
+            <div class="horizontal-cover-image-container">
+                <gevme-content-block name="horizontal-cover-image" />
+                <div class="horizontal-logo-image-group">
+                    <gevme-content-block name="horizontal-logo-image" />
+                    <gevme-content-block name="horizontal-logo-text" />
+                </div>
+            </div>
+            <gevme-content-block exclude="horizontal-logo-image,horizontal-cover-image,horizontal-logo-text" />
+        </div>
+    </div>
+    {{#if setting.livebar.enabled}}
+        {{#if setting.livebar.positionRight}}
+            <div class="gevme-template-chat" {{#if setting.livebar.closable}}style="flex: 0 0 60px;"{{else}}style="flex: 0 0 360px;"{{/if}}>
+                <gevme-live-bar />
+            </div>
+        {{/if}}
+    {{/if}}
+</main>
+{{{global.partials.tail-section}}}

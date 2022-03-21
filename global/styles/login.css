@@ -1,0 +1,26 @@
+/*login*/
+
+div[data-gevme-wrap=gevme-wrap-heading] {
+  margin-bottom: 10px!important;
+}
+
+div[data-gevme-login=gevme-login] {
+  padding: 100px 20px!important;
+  min-width: 400px!important;
+}
+
+div[data-gevme-wrap=gevme-wrap-form] {
+  width: 90%!important;
+  margin-bottom: 10px!important;
+}
+
+@media screen and (max-width: 767px) {
+  div[data-gevme-login=gevme-login] {
+    min-width: 300px!important;
+    max-width: 450px!important;
+    width: 80%!important;
+  }
+  main[data-gevme-main=gevme-main] {
+    justify-content: center!important;
+  }
+}

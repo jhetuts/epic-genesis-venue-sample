@@ -1,0 +1,134 @@
+{
+    "widgets": {
+        "enabledWidgets": "*"
+    },
+    "blocks": {
+        "enabledBlocks": "*",
+        "predefinedBlocks": {
+            "horizontal-logo-image": {
+                "preventBlockSettings": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventChangeType": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventEdit": {
+                    "SPONSOR": false,
+                    "MANAGER": false
+                },
+                "preventDelete": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "type": "Image",
+                "title": "Logo Image",
+                "data": {
+                    "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Logo Image</span></strong></span></p>",
+                    "title": "Logo Image",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "images": [
+                        {
+                            "url": "{{project.baseUrl}}/assets/horizontal-banner-logo.png"
+                        }
+                    ],
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "0px",
+                    "order": 1,
+                    "alignment": "left",
+                    "blockWidth": "178px",
+                    "blockHeight": "128px",
+                    "widthType": "custom",
+                    "fitHeightToContent": false,
+                    "boundingBox": false,
+                    "contentPadding": ["0", "0", "0", "0", "px"],
+                    "contentMargin": ["0", "0", "0", "0", "px"]
+                }
+            },
+            "horizontal-logo-text": {
+                "preventBlockSettings": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventChangeType": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventEdit": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventDelete": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "type": "RichText",
+                "title": "Logo Text",
+                "data": {
+                    "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Logo Text</span></strong></span></p>",
+                    "title": "Logo Text",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "textContent": "<p style=\"font-size:40px;font-weight:700;font-family:var(--themeSecondaryFontFamily);color: var(--themeWhiteColor);overflow:hidden;text-overflow:ellipsis;white-space: nowrap;\">{{project.name}}</p>",
+                    "order": 1,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "fit-content",
+                    "widthType": "full",
+                    "fitHeightToContent": true,
+                    "boundingBox": false,
+                    "contentPadding": ["0", "0", "0", "0", "px"],
+                    "contentMargin": ["56", "0", "0", "0", "px"]
+                }
+            },
+            "horizontal-cover-image": {
+                "preventBlockSettings": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventChangeType": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventEdit": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "preventDelete": {
+                    "SPONSOR": true,
+                    "MANAGER": true
+                },
+                "type": "Image",
+                "title": "Cover Image",
+                "data": {
+                    "heading": "<p style=\"text-align: center; line-height: 27.6px;\"><span style=\"white-space:pre-wrap;\"><strong><span style=\"font-size: 24px; font-family: var(--themeSecondaryFontFamily);\">Cover Image</span></strong></span></p>",
+                    "title": "Cover Image",
+                    "headingVisibility": false,
+                    "headingAlignment": "center",
+                    "autoScrollEnabled": false,
+                    "autoScrollTimeInterval": null,
+                    "images": [
+                        {
+                            "url": "{{project.baseUrl}}/assets/horizontal-banner-cover.png"
+                        }
+                    ],
+                    "isSlideshow": false,
+                    "spaceBetweenImages": "0px",
+                    "order": 2,
+                    "alignment": "left",
+                    "blockWidth": "100%",
+                    "blockHeight": "216px",
+                    "widthType": "full",
+                    "fitHeightToContent": false,
+                    "boundingBox": false,
+                    "contentPadding": ["0", "0", "0", "0", "px"],
+                    "contentMargin": ["0", "0", "0", "0", "px"]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Login | {{livepage.title}}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      {{#if setting.loginOption.sms}}
+        <link rel="stylesheet" href="https://files-myxp.gevme.com/templates/styles/plugin/intlTelInput.css">
+        <link rel="stylesheet" href="https://files-myxp.gevme.com/templates/styles/plugin/override-intlTelInput.css">
+      {{/if}}
+      <style type="text/css">
+        a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}body,html{height:100%;width:100%;margin:0;padding:0;color:#000;background-color:#fff;font-family:"Open Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;font-size:14px}
+      </style>
+      <style type="text/css">
+        html{font-family:"Montserrat, sans-serif";font-size:16px}body,html{height:100%;width:100%;margin:0;padding:0}body{display:flex;align-items:center;height:100%;flex:1 1;flex-direction:column;justify-content:center;overflow:hidden;background:no-repeat center center/cover;background-image:url(../assets/bg.png);line-height:1.4}div[data-gevme-wrap=gevme-wrap]{margin-bottom:20px}main[data-gevme-main=gevme-main]{display:flex;position:relative;align-items:center;height:100%;overflow-y:auto;padding:20px;flex-direction:column;width:100%;justify-content:center;background-color:#ffffffc2;box-sizing:border-box}img[data-gevme-logo=gevme-logo]{display:block;width:50%;margin:auto}div[data-gevme-login=gevme-login]{display:flex;align-items:center;flex-direction:column;justify-content:center;padding:70px 20px;box-shadow:rgb(0 0 0 / 20%) 0 15px 35px 0;background:#fff;border-radius:10px;max-width:calc(450px - 40px);min-width:300px}div[data-gevme-wrap=gevme-wrap-heading]{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:40px}div[data-gevme-wrap=gevme-wrap-footer] img{display:block}h1[data-gevme-h1=gevme-h1]{font-size:2rem}h2[data-gevme-h2=gevme-h2]{font-size:1.95rem;margin-bottom:10px}p[data-gevme-p=gevme-p]{font-size:1rem;margin-bottom:20px}div[data-gevme-wrap=gevme-wrap-form]{display:flex;width:70%;align-items:center;justify-content:center;flex-direction:column;margin-bottom:40px}form[data-gevme-form=gevme-form]{display:flex;width:100%;align-items:center;justify-content:center;flex-direction:column}form[data-gevme-form=gevme-form] label{width:100%;margin-bottom:20px;box-sizing:border-box}p[data-gevme-error=gevme-error]{display:block;color:#ff0049;font-size:.87rem;font-weight:700}p[data-error=general]{margin-top:10px}form[data-gevme-form=gevme-form] input{display:block;padding:10px 20px;box-sizing:border-box;font-size:1.4rem;border-radius:5px;border:1px solid #ccc;font-family:inherit;outline:0;margin-bottom:5px;width:100%}form[data-gevme-form=gevme-form] input.input-error{border:1px solid #ff0049}form[data-gevme-form=gevme-form] input[type=submit]{font-size:1.25rem;color:#fff;border:1px solid #5241d1;background:#5241d1;margin-bottom:0;cursor:pointer}form[data-gevme-form=gevme-form] input[data-gevme-input=gevme-sms]{padding:10px 20px 10px 50px}form[data-gevme-form=gevme-form] input[type=submit]:disabled{filter:grayscale(80%);cursor:not-allowed}div[data-gevme-form=gevme-otp]{display:none;flex-direction:column;align-items:center}div[data-gevme-form=gevme-otp] p{text-align:center}label[data-gevme-label=gevme-otp]{max-width:320px;display:flex;align-items:center;justify-content:center;background-size:contain}label[data-gevme-label=gevme-otp] .otp-inputs{display:flex}label[data-gevme-label=gevme-otp] .otp-inputs input{margin:0 5px;font-size:1.5rem;text-align:center;padding:20px 0}label[data-gevme-label=gevme-otp] .otp-inputs input:focus{color:#3f4254;background-color:#fff;border-color:#2c2c2c;outline:0;transition:all ease-in-out 0s}a[data-gevme-anchor=gevme-back]{display:block;padding:10px;text-decoration:none;color:#007aff;outline:0}.login-footer-logo{height:25px}.otp-header{text-align:center;font-size:20px;margin:20px 0}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}.loginWithGoogle{display:flex;-moz-box-align:center;align-items:center;-moz-box-pack:center;justify-content:center;border:none;background:0 0;cursor:pointer;padding:10px 20px;width:100%;background:#4081ec;-webkit-border-radius:.25rem;border-radius:.25rem;font-family:Montserrat,sans-serif;font-size:1.2em;color:#fff;margin-top:10px}.loginWithGoogle.error{border:2px solid #ff0049}.loginWithGoogle .loginLogo img{display:block;margin-right:10px;padding:5px;background-color:#fff;-webkit-border-radius:.25rem;border-radius:.25rem}.loginWithGoogle span{line-height:1;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center}.radio-buttons{display:flex;align-items:center}.gevme-login-selection{display:flex;align-items:center}div[data-gevme-form=gevme-login]{flex-direction:column}@media screen and (max-width:768px){h1[data-gevme-h1=gevme-h1]{font-size:1.5rem}div[data-gevme-login=gevme-login]{padding:50px 20px}div[data-gevme-wrap=gevme-wrap-heading]{margin-bottom:20px}}@media screen and (max-width:767px){main[data-gevme-main=gevme-main]{justify-content:flex-start}div[data-gevme-login=gevme-login]{max-width:80%;min-width:unset}div[data-gevme-wrap=gevme-wrap-form]{width:100%}h2[data-gevme-h2=gevme-h2]{font-size:1.375rem}form[data-gevme-form=gevme-form] input{font-size:1rem}div[data-gevme-wrap=gevme-wrap]{margin-bottom:10px}label[data-gevme-label=gevme-otp] .otp-inputs input{font-size:1rem;padding:10px 0}}
+      </style>
+      {{#if project.customCss}}
+        <style type="text/css" data-style="project">
+          {{project.customCss}}
+        </style>
+      {{/if}}
+      {{#if livepage.customCss}}
+        <style type="text/css" data-style="livepage">
+          {{livepage.customCss}}
+        </style>
+      {{/if}}
+      <script type="text/javascript" src="https://files-myxp.gevme.com/templates/scripts/auth-sdk-v3.js"></script>
+    </head>
+    <body style="background-image: url('{{setting.projectBackgroundImage}}')">
+      <main data-gevme-main="gevme-main">
+        {{#if livepage.logo}}
+          <div data-gevme-wrap="gevme-wrap">
+            <img data-gevme-logo="gevme-logo" class="logo" src="{{livepage.logo.url}}" alt="GEVME" />
+          </div>
+        {{else if setting.logo}}
+          <div data-gevme-wrap="gevme-wrap">
+            <img data-gevme-logo="gevme-logo" class="logo" src="{{setting.logo}}" alt="GEVME" />
+          </div>
+        {{/if}}
+        <div data-gevme-wrap="gevme-wrap-heading">
+          <h1 data-gevme-h1="gevme-h1">{{project.name}}</h1>
+        </div>
+        <div data-gevme-login="gevme-login">
+          <div data-gevme-wrap="gevme-wrap-heading">
+            <h2 data-gevme-h2="gevme-h2">Check in to access this LiveStream</h2>
+          </div>
+          {{#if setting.loginOption.sharedPassword.enable}}
+            <div data-gevme-wrap="gevme-wrap-form" data-gevme-form="gevme-login">
+              <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-shared-pwd">
+                {{#each setting.loginOption.sharedPassword.value}}
+                  <label data-gevme-label="gevme-{{this.field}}" for="{{this.field}}">
+                    <span class="data-gevme-label-heading">{{this.label}}</span>
+                    <input data-gevme-input="gevme-{{this.field}}" type="{{this.field}}" name="{{this.field}}" placeholder="" autocomplete="off" minlength="1" />
+                  </label>
+                {{/each}}
+                <input data-gevme-input="gevme-submit" type="submit" value="Check In" />
+              </form>
+              <p data-gevme-error="gevme-error" data-error="general"></p>
+            </div>
+          {{else if setting.loginOption.userPwdEnabled}}
+            <div data-gevme-wrap="gevme-wrap-form" data-gevme-form="gevme-login">
+              <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-username-pwd">
+                <label data-gevme-label="gevme-username" for="username">
+                  <span class="data-gevme-label-heading">Username/Email</span>
+                  <input data-gevme-input="gevme-username" type="username" name="username" placeholder="" autocapitalize="none" autocomplete="off" />
+                  <p data-gevme-error="gevme-error" data-error="username"></p>
+                </label>
+                <label data-gevme-label="gevme-password" for="password">
+                  <span class="data-gevme-label-heading">Password</span>
+                  <input data-gevme-input="gevme-password" type="password" name="password" placeholder="" autocomplete="off" minlength="1" />
+                  <p data-gevme-error="gevme-error" data-error="password"></p>
+                </label>
+                <p data-gevme-error="gevme-error" data-error="auth0"></p>
+                <input data-gevme-input="gevme-submit" type="submit" value="Check In" />
+              </form>
+            </div>
+          {{else}}
+            {{#if setting.loginOption.email}}
+              {{#if setting.loginOption.sms}}
+                <p data-gevme-p="gevme-p" class="gevme-login-selection">Checkin with: <span class="radio-buttons">
+                <input type="radio" checked id="radio-email" name="checkin" value="Email">
+                <label for="radio-email">Email</label>
+                <input type="radio" id="radio-sms" name="checkin" value="SMS">
+                <label for="radio-sms">SMS</label>
+                </span></p>
+              {{else}}
+                <p data-gevme-p="gevme-p" class="gevme-login-selection">Checkin with: <span class="radio-buttons">
+                  <input type="radio" checked id="radio-email" id="email" name="checkin" value="Email">
+                  <label for="radio-email">Email</label>
+                </span></p>
+              {{/if}}
+            {{else}}
+              {{#if setting.loginOption.sms}}
+                <p data-gevme-p="gevme-p" class="gevme-login-selection">Checkin with:  <span class="radio-buttons">
+                <input type="radio" checked id="radio-sms" name="checkin" value="SMS">
+                <label for="radio-sms">SMS</label>
+                </span></p>
+              {{/if}}
+            {{/if}}
+            {{#if setting.loginOption.email}}
+              <div data-gevme-wrap="gevme-wrap-form" class="gevme-wrap-email-form" data-gevme-form="gevme-login-email">
+                <div data-gevme-form="gevme-login">
+                  <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-email">
+                    <label data-gevme-label="gevme-email" for="email">
+                      <input data-gevme-input="gevme-email" type="email" name="email" placeholder="Email" autocapitalize="none" autocomplete="off" />
+                      <p data-gevme-error="gevme-error" data-error="email"></p>
+                    </label>
+                    <input data-gevme-input="gevme-submit" type="submit" value="Check In" />
+                  </form>
+                  {{#if setting.loginOption.google}}
+                    <button type="button" class="loginWithGoogle">
+                      <span class="loginLogo"><img width="20" height="20" src="https://files-myxp.gevme.com/templates/assets/google.svg" alt="Google"></span>
+                      <span>Sign in with Google</span>
+                    </button>
+                  {{/if}}
+                  <p data-gevme-error="gevme-error" data-error="general"></p>
+                </div>
+                <div data-gevme-form="gevme-otp">
+                  <div data-gevme-wrap="gevme-wrap">
+                    <img src="https://files-myxp.gevme.com/templates/assets/icon_email_otp.svg" alt="OTP Sent" />
+                  </div>
+                  <p data-gevme-p="gevme-p"></p>
+                  <form data-gevme-form="gevme-form">
+                    <label data-gevme-label="gevme-otp" for="otp-wrap">
+                      <div id="otp-wrap" class="otp-inputs" data-otp-length="6"></div>
+                    </label>
+                    <p data-gevme-error="gevme-error" data-error="otp"></p>
+                  </form>
+                  <a href="#" data-gevme-anchor="gevme-back">Back</a>
+                </div>
+              </div>
+            {{/if}}
+            {{#if setting.loginOption.sms}}
+              <div data-gevme-wrap="gevme-wrap-form" class="gevme-wrap-sms-form" data-gevme-form="gevme-login-sms" {{#if setting.loginOption.email}} style="display: none;" {{/if}}>
+                <div data-gevme-form="gevme-login">
+                  <form data-gevme-form="gevme-form" data-gevme-login-type="login-with-sms">
+                    <label data-gevme-label="gevme-sms" for="sms">
+                      <input data-gevme-input="gevme-sms" type="sms" name="sms" autocapitalize="none" autocomplete="off" />
+                      <p data-gevme-error="gevme-error" data-error="sms"></p>
+                    </label>
+                    <input data-gevme-input="gevme-submit" type="submit" value="Check In" />
+                  </form>
+                  <p data-gevme-error="gevme-error" data-error="general"></p>
+                </div>
+                <div data-gevme-form="gevme-otp">
+                  <div data-gevme-wrap="gevme-wrap">
+                    <img src="https://files-myxp.gevme.com/templates/assets/icon_email_otp.svg" alt="OTP Sent" />
+                  </div>
+                  <p data-gevme-p="gevme-p"></p>
+                  <form data-gevme-form="gevme-form">
+                    <label data-gevme-label="gevme-otp" for="otp-wrap">
+                      <div id="otp-wrap" class="otp-inputs" data-otp-length="6"></div>
+                    </label>
+                    <p data-gevme-error="gevme-error" data-error="otp"></p>
+                  </form>
+                  <a href="#" data-gevme-anchor="gevme-back">Back</a>
+                </div>
+              </div>
+            {{/if}}
+          {{/if}}
+          <div data-gevme-wrap="gevme-wrap-footer">
+            <a target="_blank" href="https://www.gevme.com/en/" data-gevme-p="gevme-p">
+              <img class="login-footer-logo" src="https://files-myxp.gevme.com/templates/assets/GEVME_logo.svg" alt="GEVME" />
+            </a>
+          </div>
+        </div>
+      </main>
+      {{#if setting.loginOption.sms}}
+        <script type="text/javascript" src="https://files-myxp.gevme.com/templates/scripts/plugin/intlTelInput.js"></script>
+      {{/if}}
+    </body>
+  </html>
